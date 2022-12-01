@@ -130,7 +130,7 @@ $ps_speak.Speak($str2)
 
          ##Write-Output $newList
 
-    }elseif($cmd.IndexOf("-")){
+    }elseif($cmd.IndexOf("-") -ne -1){
         CardMecri $cmd $newList $newClearCard ([ref]$RestCount)
 
         if([int]$RestCount -eq 0){
